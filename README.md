@@ -1,2 +1,8 @@
-# penden
+# Penden
+
+## Abstract 
+Screen readers are the primary tool through which Blind and Low Vision (BLV) people use the internet. However, 98.1% of the websites on the internet do not meet WCAG AA guidelines, minimum for a usable experience. In tests conducted (n = 44), the average increase in time taken to complete a task by a screen reader user as compared to a sighted user was a factor of 9.2. Penden solves this problem via a browser extension that provides a pop-up, enabling users to semantically search any element on a website. Hence, users are able to interact with a large part of a website through Penden’s search itself. When a user arrives on a page, Penden extracts all interactable elements in the website and transforms them into vector representation. For this, a fine-tuned, distilled, RoBERTa based model was used. The vector representations are then stored in an ANN-based search index. When a user searches for a term or phrase, Penden converts the query into a vector and uses cosine similarity to search against the index. Once a favourable result is found, Penden automatically brings the focus of the screen reader to the selected element. Penden is fully compatible with all major screen readers including JAWS, VoiceOver and NVDA. In trials (n = 56), users on average completed their assigned tasks 647% faster with Penden than without it. Qualitative feedback received also supports this claim, with users registering positive feedback.  With Penden, visually challenged users can now more reliably and efficiently use the internet. 
+
+## Demo
+[![Penden Demo](https://img.youtube.com/vi/uqwYkZBET0I/0.jpg)](https://www.youtube.com/watch?v=uqwYkZBET0I)
  
