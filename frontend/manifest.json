@@ -1,0 +1,61 @@
+{
+    "name": "Penden",
+    "version": "1",
+    "description": "Everything in one.",
+    "manifest_version": 2,
+    "icons": {
+      "16": "images/replacely16.png",
+      "32": "images/replacely32.png",
+      "48": "images/replacely48.png",
+      "128": "images/replacely128.png"
+    },
+    "background": {
+      "scripts": [
+        "background.js"
+      ],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+      
+        "css" : [
+         "content.css"
+        ], 
+        "js": [
+          "jquery.js",
+          "content.js"    
+        ],
+        "run_at": "document_end"
+  
+      }
+    ],
+    "permissions": [
+      "contextMenus",
+      "tabs"
+    ],
+    "commands": {
+      "alt-text": {
+        "suggested_key": {
+          "mac": "Alt+Shift+I", 
+          "windows": "Alt+Shift+I"
+        },
+        "description": "Retreives the alt-text for the images"
+      },
+      "generate-load-for-index": {
+        "suggested_key": {
+          "mac": "Alt+Shift+P", 
+          "windows": "Alt+Shift+P"
+        },
+        "description": "Generates the load for the index"
+      }
+    },
+    "browser_action": {
+      "default_icon": "images/replacely128.png",
+      "default_popup": "popup.html"
+    }, 
+    "web_accessible_resources" : ["popup.html"]
+
+  }

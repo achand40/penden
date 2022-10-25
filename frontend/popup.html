@@ -1,0 +1,110 @@
+<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+   dialog {
+     width: 40rem;
+     height: 25rem;
+
+     padding: 0px 100px 300px 100px;
+     border: none ;
+     border-radius: 20px;
+     border-style: solid;
+}
+ body {
+	 text-align: center;
+}
+ body {
+
+     border: none;
+}
+ .search-container-penden {
+	 width:  40rem;
+	 display: block;
+     margin: 0 auto;
+     padding: 0px 0px 8px 0px;
+     border-radius: 10px;
+}
+ input#search-bar-penden{
+	 margin: 0 auto;
+	 width: 100%;
+	 height: 45px;
+	 font-size: 1rem;
+	 border: 1px solid #d0cfce;
+     outline: none;
+     border-radius: 10px;
+}
+ input#search-bar-penden:focus {
+	 border: 2px solid black;
+	 transition: 0.35s ease;
+     color: #000000;
+     font-size: large;
+     font-weight:  500;
+     padding: 0px 10px;
+}
+ input#search-bar-penden:focus::-webkit-input-placeholder {
+	 transition: opacity 0.45s ease;
+	 opacity: 0;
+}
+ input#search-bar-penden:focus::-moz-placeholder {
+	 transition: opacity 0.45s ease;
+	 opacity: 0;
+}
+ input#search-bar-penden:focus:-ms-placeholder {
+	 transition: opacity 0.45s ease;
+	 opacity: 0;
+}
+
+
+.search-results-penden {
+display: inline-block;
+  background-color:#fad541;
+  color: black;
+  width: 30rem;
+  padding: 1rem 5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  
+}
+
+.seperator {
+    padding: 15px;
+}
+.heading-penden {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 4rem;
+    padding: 0px;
+}
+
+.message-style {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 3rem;
+    padding: 20px;
+
+
+}
+</style>
+</head>
+<body>
+    <dialog id='dialog-penden'>
+        <h1 class = "heading-penden">Penden</h1>
+
+        <form class="search-container-penden">
+            <input tabindex = 0 type="text" id="search-bar-penden" placeholder="Penden search">
+        </form>
+        <div id = "loading-penden"></div>
+        <nav id = "navigation-mit" aria-live="assertive" role="application"></nav>
+
+    </dialog>
+
+ <script src = "popup.js"></script>
+</body>
